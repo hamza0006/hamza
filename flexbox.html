@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex box </title>
+	<style>
+		#divmain{
+			display: flex;
+			width:80%;
+			height:auto;
+			flex-wrap: wrap;
+			background-color: purple;
+
+		}
+		.items{
+			flex: 1 30px;
+			background-color: orange;
+			text-align: center;
+			color: white;
+		height: 50px;
+			margin:10px;
+			
+
+		}
+		.items:nth-child(1){
+			flex: 1 40px;
+
+			}
+			.items:nth-child(2){
+				flex: 2 60px;
+			}
+			
+			.items:nth-child(5){
+				flex: 3 60px;
+			}
+    
+
+	</style>
+</head>
+<body>
+<div id="divmain">
+	<div class="items">1</div>
+	<div class="items">1</div>
+	<div class="items">1</div>
+	<div class="items">2</div>
+	<div class="items">3</div>
+</div>
+</body>
+</html>
