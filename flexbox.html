@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            #main{
+                display: flex;
+                width: 90%;
+                height: auto;
+                background-color: purple;
+                flex-wrap: wrap;
+            }
+            .item{
+                flex: 1 ;
+                height: 20%;
+                background-color: orange;
+                color: aliceblue;
+                text-align: center;
+                margin: 1%;
+                transition: transform;
+                
+            }
+            .item:hover{
+                
+                background-color: red;
+                transition-duration: 5s;
+                transform: scale(1.2) skew(-30deg);
+
+            }
+            .item:nth-child(2){
+                flex: 2;
+                transition: transform 2s;
+            }
+            .item:nth-child(2):hover{
+                flex: 1;
+                background-color: yellow;
+                transform:rotate(90deg);
+            }
+            .item:nth-child(5){
+                transition: transform;
+            }
+            .item:nth-child(5):hover{
+                flex: 2;
+                background-color: yellow;
+                transition-duration: 2s;
+                transform: translateX(-300px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">1</div>
+            <div class="item">1</div>
+            <div class="item">3</div>
+        </div>
+    </body>
+</html>
